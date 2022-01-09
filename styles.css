@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --hover-blue: hsl(245, 73%, 64%);
+}
+* {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* overflow: hidden; */
+  z-index: -2;
+  background: var(--pale-blue);
+}
+.back {
+  position: absolute;
+  width: 100vw;
+}
+.back > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+.parent {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--dark-blue);
+  text-align: center;
+}
+p {
+  text-align: center;
+  margin: 0 60px;
+  margin-top: 20px;
+  line-height: 27px;
+  color: var(--desaturated-blue);
+}
+.card {
+  background: white;
+  width: 450px;
+  overflow: hidden;
+  height: 680px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  box-shadow: 0 25px 25px hsla(223, 47%, 23%, 0.08);
+}
+.plan {
+  margin-top: 20px;
+  background: var(--very-pale-blue);
+  width: calc(100% - 100px);
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  height: 100px;
+  padding: 20px;
+  border-radius: 15px;
+}
+.plan a {
+  color: var(--bright-blue);
+  font-weight: 700;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+.plan a:hover {
+  color: var(--hover-blue);
+  text-decoration: none;
+}
+.music-icon-and-text {
+  display: flex;
+  width: 160px;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 27px;
+}
+.plan-price {
+  font-weight: 900;
+  letter-spacing: -0.3px;
+  color: var(--dark-blue);
+}
+.plan-price span {
+  font-weight: normal;
+  letter-spacing: initial;
+  color: var(--desaturated-blue);
+}
+.proceed-button:hover {
+  background: var(--hover-blue);
+}
+.proceed-button {
+  cursor: pointer;
+  background: var(--bright-blue);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 100px);
+  margin-top: 30px;
+  font-weight: 700;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 14px;
+  box-shadow: 0 15px 15px 7px var(--pale-blue);
+  transition: background 0.3s;
+}
+.cancel-button {
+  cursor: pointer;
+  color: var(--desaturated-blue);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 26px;
+  transition: color 0.3s;
+}
+.cancel-button:hover {
+  color: var(--dark-blue);
+}
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
