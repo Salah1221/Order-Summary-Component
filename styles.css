@@ -13,6 +13,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+::selection {
+  color: initial;
+  background: hsla(245, 75%, 52%, 0.5);
 }
 body {
   /* overflow: hidden; */
